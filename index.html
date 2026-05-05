@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masha Maria — Model</title>
+  <meta name="description" content="Masha Maria — fashion and creative model. Portfolio, bookings, and contact." />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Masha Maria</a>
+      <ul>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="hero-image">
+      <img
+        src="https://drive.google.com/thumbnail?id=1gZjrLmRvSmk2-q6wDUNSGghxHmcYRsNT&sz=w1600"
+        alt="Masha Maria"
+      />
+    </div>
+    <div class="hero-text">
+      <h1>Masha<br/>Maria</h1>
+      <p class="tagline">Model &nbsp;&middot;&nbsp; Creative &nbsp;&middot;&nbsp; New York</p>
+      <div class="hero-links">
+        <a href="portfolio.html" class="btn">View Portfolio</a>
+        <a href="contact.html" class="btn-outline">Bookings</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Masha Maria &nbsp;&middot;&nbsp;
+      <a href="mailto:mmdroenkova@icloud.com">mmdroenkova@icloud.com</a>
+    </p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('img').forEach(img => {
+      if (img.complete) img.classList.add('loaded');
+      else img.addEventListener('load', () => img.classList.add('loaded'));
+    });
+  </script>
+</body>
+</html>
