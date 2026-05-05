@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Masha Maria</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Masha Maria</a>
+      <ul>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-wrap">
+    <h1 class="page-title">About</h1>
+    <div class="about-grid">
+      <div class="about-image">
+        <img src="https://drive.google.com/thumbnail?id=1q4YkaWMdbkv4LBgJRZTIjzwSwOwU9wU8&sz=w900" alt="Masha Maria" />
+      </div>
+      <div class="about-content">
+        <h2>Masha Maria</h2>
+        <p>A fashion and creative model based in New York, with a background spanning editorial, commercial, and lifestyle work. Known for versatility across moods — from refined minimalism to bold, character-driven imagery.</p>
+        <p>With experience across studio and location shoots, Masha brings a natural ease in front of the camera and a strong ability to collaborate with photographers, directors, and creative teams.</p>
+        <p>Available for editorial, commercial, lifestyle, and creative projects. Open to both local New York bookings and travel.</p>
+        <div class="stats">
+          <div class="stat-row"><span class="stat-label">Height</span><span class="stat-value">5&prime; 8&Prime; &nbsp;/&nbsp; 173 cm</span></div>
+          <div class="stat-row"><span class="stat-label">Bust</span><span class="stat-value">34&Prime; &nbsp;/&nbsp; 86 cm</span></div>
+          <div class="stat-row"><span class="stat-label">Waist</span><span class="stat-value">24&Prime; &nbsp;/&nbsp; 61 cm</span></div>
+          <div class="stat-row"><span class="stat-label">Hips</span><span class="stat-value">35&Prime; &nbsp;/&nbsp; 89 cm</span></div>
+          <div class="stat-row"><span class="stat-label">Dress</span><span class="stat-value">US 2&ndash;4 &nbsp;/&nbsp; EU 34&ndash;36</span></div>
+          <div class="stat-row"><span class="stat-label">Shoe</span><span class="stat-value">US 8 &nbsp;/&nbsp; EU 38&ndash;39</span></div>
+          <div class="stat-row"><span class="stat-label">Eyes</span><span class="stat-value">Hazel</span></div>
+          <div class="stat-row"><span class="stat-label">Hair</span><span class="stat-value">Brown</span></div>
+          <div class="stat-row"><span class="stat-label">Based in</span><span class="stat-value">New York, NY</span></div>
+        </div>
+        <a href="contact.html" class="btn">Book Masha</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Masha Maria &nbsp;&middot;&nbsp;
+      <a href="mailto:mmdroenkova@icloud.com">mmdroenkova@icloud.com</a>
+    </p>
+  </footer>
+  <script>
+    document.querySelectorAll('img').forEach(img => {
+      if (img.complete) img.classList.add('loaded');
+      else img.addEventListener('load', () => img.classList.add('loaded'));
+    });
+  </script>
+</body>
+</html>
