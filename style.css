@@ -98,11 +98,12 @@ nav ul a:hover, nav ul a.active { color: var(--gray); }
 }
 
 .hero-text h1 {
-  font-family: var(--font-display);
-  font-size: clamp(48px, 6vw, 90px);
-  font-weight: 300;
-  font-style: italic;
-  line-height: 1.05;
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(60px, 8vw, 120px);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.1;
+  white-space: nowrap;
   margin-bottom: 24px;
 }
 
