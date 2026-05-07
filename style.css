@@ -103,12 +103,12 @@ nav ul a:hover, nav ul a.active { color: var(--gray); }
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 60px 80px;
+  padding: 60px 60px 60px 70px;
 }
 
 .hero-text h1 {
   font-family: 'Cintarini', cursive;
-  font-size: clamp(42px, 5.5vw, 88px);
+  font-size: clamp(38px, 4.8vw, 78px);
   font-weight: normal;
   font-style: normal;
   line-height: 1.0;
