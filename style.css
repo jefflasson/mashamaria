@@ -3,6 +3,15 @@
    Minimalist · Image-first · White/Black
 ============================================= */
 
+@font-face {
+  font-family: 'Cintarini';
+  src: url('Cintarini.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -50,10 +59,10 @@ nav {
 }
 
 .logo {
-  font-family: var(--font-display);
-  font-size: 22px;
-  font-weight: 400;
-  font-style: italic;
+  font-family: 'Cintarini', cursive;
+  font-size: 28px;
+  font-weight: normal;
+  font-style: normal;
   color: var(--black);
   text-decoration: none;
   letter-spacing: 0.01em;
@@ -98,9 +107,9 @@ nav ul a:hover, nav ul a.active { color: var(--gray); }
 }
 
 .hero-text h1 {
-  font-family: 'Great Vibes', cursive;
-  font-size: clamp(60px, 8vw, 120px);
-  font-weight: 400;
+  font-family: 'Cintarini', cursive;
+  font-size: clamp(64px, 8vw, 124px);
+  font-weight: normal;
   font-style: normal;
   line-height: 1.1;
   white-space: nowrap;
