@@ -116,14 +116,6 @@ nav ul a:hover, nav ul a.active { color: var(--gray); }
   margin-bottom: 24px;
 }
 
-.hero-signature {
-  display: block;
-  width: clamp(280px, 45vw, 560px);
-  height: auto;
-  margin-bottom: 28px;
-  mix-blend-mode: multiply;
-  opacity: 0.92;
-}
 
 .tagline {
   font-size: 11px;
