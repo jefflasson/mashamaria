@@ -83,9 +83,9 @@ nav ul a:hover, nav ul a.active { color: var(--gray); }
 
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   min-height: 100vh;
-  padding-top: var(--nav-h);
+  padding-top: 0;
 }
 
 .hero-image { overflow: hidden; position: relative; }
@@ -108,12 +108,12 @@ nav ul a:hover, nav ul a.active { color: var(--gray); }
 
 .hero-text h1 {
   font-family: 'Cintarini', cursive;
-  font-size: clamp(64px, 8vw, 124px);
+  font-size: clamp(42px, 5.5vw, 88px);
   font-weight: normal;
   font-style: normal;
-  line-height: 1.1;
+  line-height: 1.0;
   white-space: nowrap;
-  margin-bottom: 24px;
+  margin-bottom: 56px;
 }
 
 
