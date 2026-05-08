@@ -108,12 +108,11 @@ nav ul a:hover, nav ul a.active { color: var(--gray); }
 
 .hero-text h1 {
   font-family: 'Cintarini', cursive;
-  font-size: clamp(36px, 7vw, 72px);
+  font-size: clamp(28px, 5.5vw, 60px);
   font-weight: normal;
   font-style: normal;
   line-height: 1.15;
-  white-space: normal;
-  overflow-wrap: break-word;
+  white-space: nowrap;
   margin-bottom: 40px;
 }
 
