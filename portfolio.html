@@ -70,10 +70,40 @@
   </footer>
 
   <script>
-    document.querySelectorAll('img').forEach(img => {
-      if (img.complete) img.classList.add('loaded');
-      else img.addEventListener('load', () => img.classList.add('loaded'));
+(function () {
+  var GAP = 16;
+
+  function spanFig(fig) {
+    var h = fig.getBoundingClientRect().height + GAP;
+    fig.style.gridRowEnd = 'span ' + Math.ceil(h / 8);
+  }
+
+  function runMasonry() {
+    var grid = document.querySelector('.portfolio-grid-single');
+    if (!grid) return;
+    grid.querySelectorAll('figure').forEach(function (fig) {
+      fig.style.gridRowEnd = '';
     });
-  </script>
+    grid.querySelectorAll('figure').forEach(spanFig);
+  }
+
+  function onLoad(img) {
+    img.classList.add('loaded');
+    runMasonry();
+  }
+
+  document.querySelectorAll('.portfolio-grid-single img').forEach(function (img) {
+    if (img.complete && img.naturalHeight) {
+      onLoad(img);
+    } else {
+      img.addEventListener('load', function () { onLoad(img); });
+      img.addEventListener('error', function () { onLoad(img); });
+    }
+  });
+
+  window.addEventListener('resize', runMasonry);
+  window.addEventListener('load', runMasonry);
+})();
+</script>
 </body>
 </html>
