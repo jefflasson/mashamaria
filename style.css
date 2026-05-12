@@ -186,15 +186,18 @@ footer a:hover { color: var(--black); }
 }
 
 .portfolio-grid-single {
-  columns: 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 8px;
   column-gap: 16px;
+  row-gap: 0;
   padding: 40px 0 80px;
+  align-items: start;
 }
 
 .portfolio-grid-single figure {
-  break-inside: avoid;
-  margin-bottom: 16px;
   overflow: hidden;
+  margin-bottom: 0;
 }
 
 .portfolio-grid-single figure img {
@@ -208,12 +211,16 @@ footer a:hover { color: var(--black); }
 .portfolio-grid-single figure:hover img { transform: scale(1.03); }
 
 @media (max-width: 768px) {
-  .portfolio-grid-single { columns: 2; column-gap: 10px; }
-  .portfolio-grid-single figure { margin-bottom: 10px; }
+  .portfolio-grid-single {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+  }
 }
 
 @media (max-width: 480px) {
-  .portfolio-grid-single { columns: 1; }
+  .portfolio-grid-single {
+    grid-template-columns: 1fr;
+  }
 }
 
 .about-grid {
